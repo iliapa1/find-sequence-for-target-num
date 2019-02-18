@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+    <body>
+        <div style="width: 35vw; margin: 10vh auto;">
+            <div class="input-field">
+                <input type="text" id="numOfGenes" placeholder="9" style="float: right;">
+                <label for="numOfGenes">Genes in single chromosome:</label>
+            </div>
+            <br><br><br><br>
+            <div class="input-field">
+                <label for="chromosomesInFirstGen">Chromosomes in first generation:</label>
+                <input type="text" id="chromosomesInFirstGen" placeholder="20" style="float: right;">
+            </div>
+            <br><br><br><br>
+            <div class="input-field">            
+                <label for="crossoverRate">Crossover rate:</label>
+                <input type="text" id="crossoverRate" placeholder="0.7" style="float: right;">
+            </div>
+            <br><br><br><br>
+            <div class="input-field">            
+                <label for="mutationRate">Mutation rate:</label>
+                <input type="text" id="mutationRate" placeholder="0.01" style="float: right;">
+            </div>
+            <br><br><br><br>
+            <div class="input-field">
+                <label for="targetNumber">Target number: </label>
+                <input type="text" id="targetNumber" placeholder="23" style="float: right;">
+            </div>
+            <br><br><br><br>
+                <a id="btnFindSolution" class="waves-effect waves-light btn">run</a>
+                <a id="btnFillDefaults" class="btn tooltipped waves-effect waves-teal" data-position="bottom" data-tooltip="Set default parameters which will always result in a quick soultion" style="float: right; background-color: white; color: black;">defaults</a>
+            <br><br><br><br>
+            <div id="solutions" style="display: none;">
+                <p style="display:inline;">Solutions</p>
+                <a id="btnClearSolutions" class="btn-small waves-effect waves-teal" style="float: right; background-color: white; color: black">clear</a>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="./script.js" async defer></script>
+
+    </body>
+</html>
